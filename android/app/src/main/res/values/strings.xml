@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CodePush</string>
+    <string moduleConfig="true" name="CodePushServerUrl">https://api.revopush.org</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">5sl1XZEITHNyTmX0JiXT5_x1rbmoNJQstSV4Xx</string>
 </resources>

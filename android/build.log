@@ -1,0 +1,256 @@
+> Task :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:shared:compileJava NO-SOURCE
+> Task :gradle-plugin:shared:processResources NO-SOURCE
+> Task :gradle-plugin:shared:classes UP-TO-DATE
+> Task :gradle-plugin:shared:jar UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:settings-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:jar UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:react-native-gradle-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:react-native-gradle-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:jar UP-TO-DATE
+> Task :app:generateAutolinkingNewArchitectureFiles UP-TO-DATE
+> Task :app:generateAutolinkingPackageList UP-TO-DATE
+> Task :app:generateCodegenSchemaFromJavaScript SKIPPED
+> Task :app:generateCodegenArtifactsFromSchema SKIPPED
+> Task :app:generateReactNativeEntryPoint UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:compileDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:compileDebugJavaWithJavac UP-TO-DATE
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:dexBuilderDebug UP-TO-DATE
+> Task :app:mergeDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processDebugJavaRes UP-TO-DATE
+> Task :app:mergeDebugJavaResource UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:mergeProjectDexDebug UP-TO-DATE
+> Task :app:configureCMakeDebug[arm64-v8a]
+
+> Task :app:buildCMakeDebug[arm64-v8a]
+C/C++: ninja: Entering directory `/Users/apple/Desktop/Demo/CodePush/android/app/.cxx/Debug/5k52396k/arm64-v8a'
+C/C++: /Users/apple/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/Users/apple/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DRN_SERIALIZABLE_STATE -Dappmodules_EXPORTS -I/Users/apple/Desktop/Demo/CodePush/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup -I/Users/apple/Desktop/Demo/CodePush/android/app/build/generated/autolinking/src/main/jni -isystem /Users/apple/.gradle/caches/9.0.0/transforms/b85f62a599074afc3b2ec6cfb7884973/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -isystem /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/jsi/include -isystem /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -MD -MT CMakeFiles/appmodules.dir/Users/apple/Desktop/Demo/CodePush/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o -MF CMakeFiles/appmodules.dir/Users/apple/Desktop/Demo/CodePush/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o.d -o CMakeFiles/appmodules.dir/Users/apple/Desktop/Demo/CodePush/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o -c /Users/apple/Desktop/Demo/CodePush/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp
+C/C++: In file included from /Users/apple/Desktop/Demo/CodePush/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp:9:
+C/C++: In file included from /Users/apple/Desktop/Demo/CodePush/android/app/build/generated/autolinking/src/main/jni/autolinking.h:12:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/ReactCommon/JavaTurboModule.h:16:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/jni/JCallback.h:13:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/dynamic.h:17:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/json/dynamic.h:74:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/F14Map.h:41:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/detail/F14MapFallback.h:26:
+C/C++: /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:254:20: error: no member named 'regular' in namespace 'std'
+C/C++: static_assert(std::regular<F14HashToken>);
+C/C++:               ~~~~~^
+C/C++: /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:254:28: error: 'F14HashToken' does not refer to a value
+C/C++: static_assert(std::regular<F14HashToken>);
+C/C++:                            ^
+C/C++: /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:212:7: note: declared here
+C/C++: class F14HashToken final {
+C/C++:       ^
+C/C++: /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:254:41: error: expected expression
+C/C++: static_assert(std::regular<F14HashToken>);
+C/C++:                                         ^
+C/C++: In file included from /Users/apple/Desktop/Demo/CodePush/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp:9:
+C/C++: In file included from /Users/apple/Desktop/Demo/CodePush/android/app/build/generated/autolinking/src/main/jni/autolinking.h:15:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/componentregistry/ComponentDescriptorProviderRegistry.h:13:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/componentregistry/ComponentDescriptorProvider.h:10:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/ComponentDescriptor.h:12:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/Props.h:10:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/PropsMacros.h:11:
+C/C++: /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/utils/fnv1a.h:26:37: error: no type named 'identity' in namespace 'std'; did you mean 'folly::Identity'?
+C/C++: template <typename CharTransformT = std::identity>
+C/C++:                                     ^~~~~
+C/C++: /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/Utility.h:253:7: note: 'folly::Identity' declared here
+C/C++: using Identity = identity_fn;
+C/C++:       ^
+C/C++: 4 errors generated.
+C/C++: /Users/apple/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/Users/apple/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DRN_SERIALIZABLE_STATE -Dappmodules_EXPORTS -I/Users/apple/Desktop/Demo/CodePush/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup -I/Users/apple/Desktop/Demo/CodePush/android/app/build/generated/autolinking/src/main/jni -isystem /Users/apple/.gradle/caches/9.0.0/transforms/b85f62a599074afc3b2ec6cfb7884973/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -isystem /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/jsi/include -isystem /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -MD -MT CMakeFiles/appmodules.dir/OnLoad.cpp.o -MF CMakeFiles/appmodules.dir/OnLoad.cpp.o.d -o CMakeFiles/appmodules.dir/OnLoad.cpp.o -c /Users/apple/Desktop/Demo/CodePush/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/OnLoad.cpp
+C/C++: In file included from /Users/apple/Desktop/Demo/CodePush/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/OnLoad.cpp:30:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/DefaultComponentsRegistry.h:11:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/fabric/ComponentFactory.h:11:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/componentregistry/ComponentDescriptorFactory.h:12:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/ComponentDescriptor.h:10:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/EventDispatcher.h:13:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/EventQueue.h:16:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/EventQueueProcessor.h:15:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/StatePipe.h:12:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/StateUpdate.h:12:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/StateData.h:13:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/dynamic.h:17:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/json/dynamic.h:74:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/F14Map.h:41:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/detail/F14MapFallback.h:26:
+C/C++: /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:254:20: error: no member named 'regular' in namespace 'std'
+C/C++: static_assert(std::regular<F14HashToken>);
+C/C++:               ~~~~~^
+C/C++: /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:254:28: error: 'F14HashToken' does not refer to a value
+C/C++: static_assert(std::regular<F14HashToken>);
+C/C++:                            ^
+C/C++: /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:212:7: note: declared here
+C/C++: class F14HashToken final {
+C/C++:       ^
+C/C++: /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:254:41: error: expected expression
+C/C++: static_assert(std::regular<F14HashToken>);
+C/C++:                                         ^
+C/C++: In file included from /Users/apple/Desktop/Demo/CodePush/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/OnLoad.cpp:30:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/DefaultComponentsRegistry.h:11:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/fabric/ComponentFactory.h:11:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/componentregistry/ComponentDescriptorFactory.h:12:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/ComponentDescriptor.h:12:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/Props.h:10:
+C/C++: In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/PropsMacros.h:11:
+C/C++: /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/utils/fnv1a.h:26:37: error: no type named 'identity' in namespace 'std'; did you mean 'folly::Identity'?
+C/C++: template <typename CharTransformT = std::identity>
+C/C++:                                     ^~~~~
+C/C++: /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/Utility.h:253:7: note: 'folly::Identity' declared here
+C/C++: using Identity = identity_fn;
+C/C++:       ^
+C/C++: 4 errors generated.
+
+> Task :app:buildCMakeDebug[arm64-v8a] FAILED
+
+[Incubating] Problems report is available at: file:///Users/apple/Desktop/Demo/CodePush/android/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:buildCMakeDebug[arm64-v8a]'.
+> com.android.ide.common.process.ProcessException: ninja: Entering directory `/Users/apple/Desktop/Demo/CodePush/android/app/.cxx/Debug/5k52396k/arm64-v8a'
+  [0/2] Re-checking globbed directories...
+  [1/3] Building CXX object CMakeFiles/appmodules.dir/Users/apple/Desktop/Demo/CodePush/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o
+  FAILED: CMakeFiles/appmodules.dir/Users/apple/Desktop/Demo/CodePush/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o 
+  /Users/apple/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/Users/apple/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DRN_SERIALIZABLE_STATE -Dappmodules_EXPORTS -I/Users/apple/Desktop/Demo/CodePush/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup -I/Users/apple/Desktop/Demo/CodePush/android/app/build/generated/autolinking/src/main/jni -isystem /Users/apple/.gradle/caches/9.0.0/transforms/b85f62a599074afc3b2ec6cfb7884973/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -isystem /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/jsi/include -isystem /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -MD -MT CMakeFiles/appmodules.dir/Users/apple/Desktop/Demo/CodePush/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o -MF CMakeFiles/appmodules.dir/Users/apple/Desktop/Demo/CodePush/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o.d -o CMakeFiles/appmodules.dir/Users/apple/Desktop/Demo/CodePush/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o -c /Users/apple/Desktop/Demo/CodePush/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp
+  In file included from /Users/apple/Desktop/Demo/CodePush/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp:9:
+  In file included from /Users/apple/Desktop/Demo/CodePush/android/app/build/generated/autolinking/src/main/jni/autolinking.h:12:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/ReactCommon/JavaTurboModule.h:16:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/jni/JCallback.h:13:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/dynamic.h:17:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/json/dynamic.h:74:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/F14Map.h:41:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/detail/F14MapFallback.h:26:
+  /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:254:20: error: no member named 'regular' in namespace 'std'
+  static_assert(std::regular<F14HashToken>);
+                ~~~~~^
+  /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:254:28: error: 'F14HashToken' does not refer to a value
+  static_assert(std::regular<F14HashToken>);
+                             ^
+  /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:212:7: note: declared here
+  class F14HashToken final {
+        ^
+  /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:254:41: error: expected expression
+  static_assert(std::regular<F14HashToken>);
+                                          ^
+  In file included from /Users/apple/Desktop/Demo/CodePush/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp:9:
+  In file included from /Users/apple/Desktop/Demo/CodePush/android/app/build/generated/autolinking/src/main/jni/autolinking.h:15:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/componentregistry/ComponentDescriptorProviderRegistry.h:13:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/componentregistry/ComponentDescriptorProvider.h:10:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/ComponentDescriptor.h:12:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/Props.h:10:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/PropsMacros.h:11:
+  /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/utils/fnv1a.h:26:37: error: no type named 'identity' in namespace 'std'; did you mean 'folly::Identity'?
+  template <typename CharTransformT = std::identity>
+                                      ^~~~~
+  /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/Utility.h:253:7: note: 'folly::Identity' declared here
+  using Identity = identity_fn;
+        ^
+  4 errors generated.
+  [2/3] Building CXX object CMakeFiles/appmodules.dir/OnLoad.cpp.o
+  FAILED: CMakeFiles/appmodules.dir/OnLoad.cpp.o 
+  /Users/apple/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/Users/apple/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DRN_SERIALIZABLE_STATE -Dappmodules_EXPORTS -I/Users/apple/Desktop/Demo/CodePush/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup -I/Users/apple/Desktop/Demo/CodePush/android/app/build/generated/autolinking/src/main/jni -isystem /Users/apple/.gradle/caches/9.0.0/transforms/b85f62a599074afc3b2ec6cfb7884973/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -isystem /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/jsi/include -isystem /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -Wall -Werror -fexceptions -frtti -std=c++20 -DFOLLY_NO_CONFIG=1 -DLOG_TAG=\"ReactNative\" -MD -MT CMakeFiles/appmodules.dir/OnLoad.cpp.o -MF CMakeFiles/appmodules.dir/OnLoad.cpp.o.d -o CMakeFiles/appmodules.dir/OnLoad.cpp.o -c /Users/apple/Desktop/Demo/CodePush/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/OnLoad.cpp
+  In file included from /Users/apple/Desktop/Demo/CodePush/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/OnLoad.cpp:30:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/DefaultComponentsRegistry.h:11:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/fabric/ComponentFactory.h:11:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/componentregistry/ComponentDescriptorFactory.h:12:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/ComponentDescriptor.h:10:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/EventDispatcher.h:13:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/EventQueue.h:16:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/EventQueueProcessor.h:15:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/StatePipe.h:12:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/StateUpdate.h:12:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/StateData.h:13:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/dynamic.h:17:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/json/dynamic.h:74:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/F14Map.h:41:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/detail/F14MapFallback.h:26:
+  /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:254:20: error: no member named 'regular' in namespace 'std'
+  static_assert(std::regular<F14HashToken>);
+                ~~~~~^
+  /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:254:28: error: 'F14HashToken' does not refer to a value
+  static_assert(std::regular<F14HashToken>);
+                             ^
+  /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:212:7: note: declared here
+  class F14HashToken final {
+        ^
+  /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:254:41: error: expected expression
+  static_assert(std::regular<F14HashToken>);
+                                          ^
+  In file included from /Users/apple/Desktop/Demo/CodePush/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/OnLoad.cpp:30:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/DefaultComponentsRegistry.h:11:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/fabric/ComponentFactory.h:11:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/componentregistry/ComponentDescriptorFactory.h:12:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/ComponentDescriptor.h:12:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/Props.h:10:
+  In file included from /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/renderer/core/PropsMacros.h:11:
+  /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/react/utils/fnv1a.h:26:37: error: no type named 'identity' in namespace 'std'; did you mean 'folly::Identity'?
+  template <typename CharTransformT = std::identity>
+                                      ^~~~~
+  /Users/apple/.gradle/caches/9.0.0/transforms/f97a0c8835e876dfb08e8efd6d33fd2f/transformed/react-android-0.83.1-debug/prefab/modules/reactnative/include/folly/Utility.h:253:7: note: 'folly::Identity' declared here
+  using Identity = identity_fn;
+        ^
+  4 errors generated.
+  ninja: build stopped: subcommand failed.
+  
+  C++ build system [build] failed while executing:
+      /Users/apple/Library/Android/sdk/cmake/3.22.1/bin/ninja \
+        -C \
+        /Users/apple/Desktop/Demo/CodePush/android/app/.cxx/Debug/5k52396k/arm64-v8a \
+        appmodules
+    from /Users/apple/Desktop/Demo/CodePush/android/app
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to generate a Build Scan (Powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.0.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 3s
+44 actionable tasks: 2 executed, 42 up-to-date

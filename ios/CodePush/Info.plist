@@ -27,6 +27,10 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
+	<key>CodePushServerURL</key>
+<string>https://api.revopush.org</string>
+<key>CodePushDeploymentKey</key>
+<string>5sl1XZEITHNyTmX0JiXT5_x1rbmoNJQstSV4Xx</string>
 	<dict>
 	  <!-- Do not change NSAllowsArbitraryLoads to true, or you will risk app rejection! -->
 		<key>NSAllowsArbitraryLoads</key>
