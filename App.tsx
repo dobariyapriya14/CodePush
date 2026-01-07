@@ -26,26 +26,26 @@ function App(): React.JSX.Element {
     backgroundColor: isDarkMode ? '#222' : '#fff',
   };
 
-  React.useEffect(() => {
-    CodePush.allowRestart();
-  }, []);
+  // React.useEffect(() => {
+  //   CodePush.allowRestart();
+  // }, []);
 
-  const checkUpdate = async () => {
-    try {
-      const update = await CodePush.checkForUpdate();
-      if (update) {
-        Alert.alert('Update available', `New version: ${update.appVersion}\n${update.description || ''}`, [
-          { text: 'Cancel', style: 'cancel' },
-          { text: 'Install Now', onPress: () => CodePush.sync({ installMode: CodePush.InstallMode.IMMEDIATE }) }
-        ]);
-      } else {
-        Alert.alert('No update', 'The app is up to date.');
-      }
-    } catch (error) {
-      Alert.alert('Error', 'Failed to check for updates.');
-      console.error(error);
-    }
-  };
+  // const checkUpdate = async () => {
+  //   try {
+  //     const update = await CodePush.checkForUpdate();
+  //     if (update) {
+  //       Alert.alert('Update available', `New version: ${update.appVersion}\n${update.description || ''}`, [
+  //         { text: 'Cancel', style: 'cancel' },
+  //         { text: 'Install Now', onPress: () => CodePush.sync({ installMode: CodePush.InstallMode.IMMEDIATE }) }
+  //       ]);
+  //     } else {
+  //       Alert.alert('No update', 'The app is up to date.');
+  //     }
+  //   } catch (error) {
+  //     Alert.alert('Error', 'Failed to check for updates.');
+  //     console.error(error);
+  //   }
+  // };
 
   return (
     <SafeAreaView style={[styles.container, backgroundStyle]}>
@@ -64,9 +64,9 @@ function App(): React.JSX.Element {
           <Text style={[styles.subtitle, { color: isDarkMode ? 'white' : 'black' }]}>
             Your app is running successfully.
           </Text>
-          <TouchableOpacity onPress={checkUpdate} style={styles.button}>
+          {/* <TouchableOpacity onPress={checkUpdate} style={styles.button}>
             <Text style={styles.buttonText}>Check for New Updates</Text>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
 
           {/* <TouchableOpacity onPress={onRestart} style={[styles.button, { marginTop: 20, backgroundColor: 'green' }]}>
             <Text style={styles.buttonText}>Restart</Text>
@@ -116,9 +116,11 @@ const styles = StyleSheet.create({
   },
 });
 
-const codePushOptions = {
-  checkFrequency: CodePush.CheckFrequency.ON_APP_RESUME,
-  installMode: CodePush.InstallMode.IMMEDIATE,
-};
+// const codePushOptions = {
+//   checkFrequency: CodePush.CheckFrequency.ON_APP_RESUME,
+//   installMode: CodePush.InstallMode.IMMEDIATE,
+// };
 
-export default CodePush(codePushOptions)(App);
+// export default CodePush(codePushOptions)(App);
+
+export default App;
