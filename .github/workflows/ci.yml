@@ -22,7 +22,7 @@ jobs:
           cache: 'npm'
 
       - name: Install Dependencies
-        run: npm ci
+        run: npm i -f
 
       - name: Run Lint
         run: npm run lint
@@ -46,7 +46,7 @@ jobs:
           cache: 'npm'
 
       - name: Install Node modules
-        run: npm ci
+        run: npm i -f
 
       - name: Setup Java
         uses: actions/setup-java@v3
@@ -82,7 +82,7 @@ jobs:
           cache: 'npm'
 
       - name: Install Node modules
-        run: npm ci
+        run: npm i -f
 
       - name: Install Pods
         working-directory: ios
