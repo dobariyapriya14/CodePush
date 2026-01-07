@@ -49,7 +49,7 @@ jobs:
         run: npm i -f && npm install --save @revopush/react-native-code-push
 
       - name: Setup Java
-        uses: actions/setup-java@v6
+        uses: actions/setup-java@v5
         with:
           distribution: 'zulu'
           java-version: '17'
