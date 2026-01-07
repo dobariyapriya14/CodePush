@@ -62,7 +62,9 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: app-release
-          path: android/app/build/outputs/apk/release/app-release.apk
+          path: android/app/build/outputs/apk/release/app-release.apk # Built APK file
+          expire_in: 1 week  # APK expires after 1 week
+
 
   ios-build:
     name: iOS Build
