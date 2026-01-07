@@ -1,5 +1,8 @@
+# CI/CD Pipeline for React Native CodePush Application
+# Runs linting, testing, and builds for both Android and iOS platforms
 name: CI
 
+# Trigger conditions: runs on pushes and pull requests to main branch
 on:
   push:
     branches: [ main ]
@@ -7,110 +10,143 @@ on:
     branches: [ main ]
 
 jobs:
+  # Job 1: Code Quality Checks
+  # Runs ESLint and unit tests to ensure code quality before building
   lint-and-test:
     name: Lint and Test
-    runs-on: ubuntu-latest
-    timeout-minutes: 120
+    runs-on: ubuntu-latest # Uses Ubuntu Linux runner for speed and cost efficiency
     steps:
+      # Step 1: Clone the repository code to the runner
       - name: Checkout code
         uses: actions/checkout@v6
 
+      # Step 2: Install Node.js v20 with npm caching for faster subsequent runs
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: '20' # Specifies Node.js version
+          cache: 'npm' # Caches npm dependencies to speed up installation
 
+      # Step 3: Install all project dependencies including CodePush SDK
+      # -f flag forces installation ignoring peer dependency warnings
       - name: Install Dependencies
         run: npm i -f && npm install --save @revopush/react-native-code-push
 
+      # Step 4: Run ESLint to check code style and catch potential errors
       - name: Run Lint
         run: npm run lint
 
+      # Step 5: Execute Jest unit tests to verify code functionality
       - name: Run Tests
         run: npm test
 
+  # Job 2: Android APK Build
+  # Builds production-ready Android release APK after code quality checks pass
   android-build:
     name: Android Build
-    runs-on: ubuntu-latest
-    timeout-minutes: 120
-    needs: lint-and-test
+    runs-on: ubuntu-latest # Uses Ubuntu for Android builds
+    needs: lint-and-test # Only runs if lint-and-test job succeeds
     steps:
+      # Step 1: Clone the repository code to the runner
       - name: Checkout code
         uses: actions/checkout@v6
 
+      # Step 2: Install Node.js v20 with npm caching
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
           node-version: '20'
           cache: 'npm'
 
+      # Step 3: Install project dependencies and CodePush module
       - name: Install Node modules
         run: npm i -f && npm install --save @revopush/react-native-code-push
 
+      # Step 4: Install Java Development Kit v17 (required for Gradle builds)
       - name: Setup Java
         uses: actions/setup-java@v5
         with:
-          distribution: 'zulu'
-          java-version: '17'
+          distribution: 'zulu' # Zulu is a popular OpenJDK distribution
+          java-version: '17' # React Native requires JDK 17+
 
+      # Step 5: Cache Gradle dependencies to speed up builds
+      # Stores ~/.gradle folders and restores them in future runs
       - name: Cache Gradle dependencies
         uses: actions/cache@v4
         with:
           path: |
-            ~/.gradle/caches
-            ~/.gradle/wrapper
-            android/.gradle
+            ~/.gradle/caches # Gradle dependency cache
+            ~/.gradle/wrapper # Gradle wrapper files
+            android/.gradle # Project-specific Gradle cache
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
           restore-keys: |
             ${{ runner.os }}-gradle-
 
+      # Step 6: Grant execute permissions to gradlew script
+      # Required on fresh CI/CD environments where file permissions aren't preserved
       - name: Make gradlew executable
         working-directory: android
         run: chmod +x gradlew
 
+      # Step 7: Clean previous build artifacts to ensure fresh build
+      # Removes build directories and compiled files from previous runs
       - name: Clean Gradle
         working-directory: android
-        run: ./gradlew clean --no-daemon
+        run: ./gradlew clean --no-daemon # --no-daemon prevents background process
 
+      # Step 8: Pre-build React Native Android libraries (optional but recommended)
+      # Ensures ReactAndroid package is available before main build
+      # || true ensures workflow continues even if this step fails
       - name: Pre-build React Native Android
         working-directory: android
         run: ./gradlew :ReactAndroid:installArchives -PreactNativeArchitectures=arm64-v8a,armeabi-v7a --no-daemon || true
 
+      # Step 9: Build production release APK for arm64-v8a and armeabi-v7a architectures
+      # Creates optimized, signed APK file ready for distribution
       - name: Build Android Release
         working-directory: android
         run: ./gradlew assembleRelease -PreactNativeArchitectures=arm64-v8a,armeabi-v7a --no-daemon --stacktrace
 
+      # Step 10: Upload the built APK as a downloadable artifact
+      # Makes the APK available in GitHub Actions artifacts section
       - name: Upload Android APK
         uses: actions/upload-artifact@v6
         with:
-          name: app-release
-          path: android/app/build/outputs/apk/release/app-release.apk
-          retention-days: 7
+          name: app-release # Artifact name in GitHub UI
+          path: android/app/build/outputs/apk/release/app-release.apk # Path to built APK
+          retention-days: 7 # Artifact expires after 7 days to save storage
 
 
+  # Job 3: iOS Build
+  # Builds iOS simulator binary after code quality checks pass
   ios-build:
     name: iOS Build
-    runs-on: macos-latest
-    timeout-minutes: 120
-    needs: lint-and-test
+    runs-on: macos-latest # macOS runner required for Xcode/iOS builds
+    needs: lint-and-test # Only runs if lint-and-test job succeeds
     steps:
+      # Step 1: Clone the repository code to the runner
       - name: Checkout code
         uses: actions/checkout@v6
 
+      # Step 2: Install Node.js v20 with npm caching
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
           node-version: '20'
           cache: 'npm'
 
+      # Step 3: Install project dependencies and CodePush module
       - name: Install Node modules
         run: npm i -f && npm install --save @revopush/react-native-code-push
 
+      # Step 4: Install iOS native dependencies using CocoaPods
+      # Downloads and integrates all iOS frameworks and libraries
       - name: Install Pods
         working-directory: ios
         run: pod install
 
+      # Step 5: Build iOS app for simulator using Xcode
+      # Creates debug build without code signing for testing purposes
       - name: Build iOS (Debug Simulator)
         working-directory: ios
         run: |
