@@ -54,16 +54,39 @@ jobs:
           distribution: 'zulu'
           java-version: '17'
 
-      - name: Build Android Release (Debug Signed)
+      - name: Cache Gradle dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+            android/.gradle
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
+      - name: Make gradlew executable
         working-directory: android
-        run: ./gradlew assembleRelease --no-daemon
+        run: chmod +x gradlew
+
+      - name: Clean Gradle
+        working-directory: android
+        run: ./gradlew clean --no-daemon
+
+      - name: Pre-build React Native Android
+        working-directory: android
+        run: ./gradlew :ReactAndroid:installArchives -PreactNativeArchitectures=arm64-v8a,armeabi-v7a --no-daemon || true
+
+      - name: Build Android Release
+        working-directory: android
+        run: ./gradlew assembleRelease -PreactNativeArchitectures=arm64-v8a,armeabi-v7a --no-daemon --stacktrace
 
       - name: Upload Android APK
         uses: actions/upload-artifact@v6
         with:
           name: app-release
-          path: android/app/build/outputs/apk/release/app-release.apk # Built APK file
-          expire_in: 1 week  # APK expires after 1 week
+          path: android/app/build/outputs/apk/release/app-release.apk
+          retention-days: 7
 
 
   ios-build:
