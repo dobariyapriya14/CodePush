@@ -22,7 +22,7 @@ jobs:
           cache: 'npm'
 
       - name: Install Dependencies
-        run: npm i -f
+        run: npm i -f && npm install --save @revopush/react-native-code-push
 
       - name: Run Lint
         run: npm run lint
@@ -46,7 +46,7 @@ jobs:
           cache: 'npm'
 
       - name: Install Node modules
-        run: npm i -f
+        run: npm i -f && npm install --save @revopush/react-native-code-push
 
       - name: Setup Java
         uses: actions/setup-java@v3
@@ -82,7 +82,7 @@ jobs:
           cache: 'npm'
 
       - name: Install Node modules
-        run: npm i -f
+        run: npm i -f && npm install --save @revopush/react-native-code-push
 
       - name: Install Pods
         working-directory: ios
