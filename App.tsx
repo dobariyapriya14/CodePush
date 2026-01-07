@@ -18,6 +18,7 @@ import {
   Alert,
 } from 'react-native';
 import CodePush from '@revopush/react-native-code-push';
+import RNRestart from 'react-native-restart';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -26,13 +27,17 @@ function App(): React.JSX.Element {
     backgroundColor: isDarkMode ? '#222' : '#fff',
   };
 
+  React.useEffect(() => {
+    CodePush.allowRestart();
+  }, []);
+
   const checkUpdate = async () => {
     try {
       const update = await CodePush.checkForUpdate();
       if (update) {
         Alert.alert('Update available', `New version: ${update.appVersion}\n${update.description || ''}`, [
           { text: 'Cancel', style: 'cancel' },
-          { text: 'Install', onPress: () => CodePush.sync() }
+          { text: 'Install Now', onPress: () => CodePush.sync({ installMode: CodePush.InstallMode.IMMEDIATE }) }
         ]);
       } else {
         Alert.alert('No update', 'The app is up to date.');
@@ -54,15 +59,19 @@ function App(): React.JSX.Element {
         contentContainerStyle={styles.scrollContent}
         style={backgroundStyle}>
         <View style={styles.content}>
-          <Text style={[styles.title, { color: isDarkMode ? '#fff' : '#000' }]}>
-            Welcome to React Native CodePush!!!!
+          <Text style={[styles.title, { color: isDarkMode ? 'white' : 'black' }]}>
+            Welcome to CodePush!!!
           </Text>
-          <Text style={[styles.subtitle, { color: isDarkMode ? '#ccc' : '#666' }]}>
+          <Text style={[styles.subtitle, { color: isDarkMode ? 'white' : 'black' }]}>
             Your app is running successfully.
           </Text>
           <TouchableOpacity onPress={checkUpdate} style={styles.button}>
-            <Text style={styles.buttonText}>Check for Updates</Text>
+            <Text style={styles.buttonText}>Check for New Updates</Text>
           </TouchableOpacity>
+
+          {/* <TouchableOpacity onPress={onRestart} style={[styles.button, { marginTop: 20, backgroundColor: 'green' }]}>
+            <Text style={styles.buttonText}>Restart</Text>
+          </TouchableOpacity> */}
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -102,10 +111,15 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   buttonText: {
-    color: '#fff',
+    color: 'white',
     fontSize: 16,
     fontWeight: '600',
   },
 });
 
-export default CodePush(App);
+const codePushOptions = {
+  checkFrequency: CodePush.CheckFrequency.ON_APP_RESUME,
+  installMode: CodePush.InstallMode.IMMEDIATE,
+};
+
+export default CodePush(codePushOptions)(App);
