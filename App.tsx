@@ -18,7 +18,6 @@ import {
   Alert,
 } from 'react-native';
 import CodePush from '@revopush/react-native-code-push';
-import RNRestart from 'react-native-restart';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
