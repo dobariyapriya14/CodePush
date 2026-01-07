@@ -60,7 +60,7 @@ function App(): React.JSX.Element {
         style={backgroundStyle}>
         <View style={styles.content}>
           <Text style={[styles.title, { color: isDarkMode ? 'white' : 'black' }]}>
-            Welcome to CodePush!!!
+            Welcome to React Native CodePush!!!
           </Text>
           <Text style={[styles.subtitle, { color: isDarkMode ? 'white' : 'black' }]}>
             Your app is running successfully.
