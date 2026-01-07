@@ -10,6 +10,7 @@ jobs:
   lint-and-test:
     name: Lint and Test
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -32,6 +33,7 @@ jobs:
   android-build:
     name: Android Build
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     needs: lint-and-test
     steps:
       - name: Checkout code
@@ -56,9 +58,16 @@ jobs:
         working-directory: android
         run: ./gradlew assembleRelease --no-daemon
 
+      - name: Upload Android APK
+        uses: actions/upload-artifact@v3
+        with:
+          name: app-release
+          path: android/app/build/outputs/apk/release/app-release.apk
+
   ios-build:
     name: iOS Build
     runs-on: macos-latest
+    timeout-minutes: 120
     needs: lint-and-test
     steps:
       - name: Checkout code
