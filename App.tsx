@@ -121,4 +121,4 @@ const styles = StyleSheet.create({
 //   installMode: CodePush.InstallMode.IMMEDIATE,
 // };
 
-export default CodePush()(App);
+export default CodePush(App);
