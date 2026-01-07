@@ -13,7 +13,7 @@ jobs:
     timeout-minutes: 120
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -37,7 +37,7 @@ jobs:
     needs: lint-and-test
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -73,7 +73,7 @@ jobs:
     needs: lint-and-test
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
