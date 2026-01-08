@@ -14,7 +14,9 @@
     "@revopush/react-native-code-push": "^1.5.0",
     "hermesvm": "^0.1.1",
     "react": "19.2.0",
-    "react-native": "0.83.1"
+    "react-native": "0.83.1",
+    "tailwindcss": "^4.1.18",
+    "uniwind": "^1.2.3"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

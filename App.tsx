@@ -5,6 +5,7 @@
  * @format
  */
 
+import './global.css';
 import React from 'react';
 import {
   SafeAreaView,
@@ -64,12 +65,11 @@ function App(): React.JSX.Element {
           <Text style={[styles.subtitle, { color: isDarkMode ? 'white' : 'black' }]}>
             Your app is running successfully.
           </Text>
-          <TouchableOpacity onPress={checkUpdate} style={styles.button}>
-            <Text style={styles.buttonText}>Check for New Updates</Text>
+          <TouchableOpacity onPress={checkUpdate} className="bg-red-600 px-6 py-4 rounded-2xl">
+            <Text className="text-white text-center font-bold text-base">Check for New Updates</Text>
           </TouchableOpacity>
-
-          {/* <TouchableOpacity onPress={onRestart} style={[styles.button, { marginTop: 20, backgroundColor: 'green' }]}>
-            <Text style={styles.buttonText}>Restart</Text>
+          {/* <TouchableOpacity onPress={checkUpdate} style={styles.button}>
+            <Text style={styles.buttonText}>Check for New Updates</Text>
           </TouchableOpacity> */}
         </View>
       </ScrollView>
